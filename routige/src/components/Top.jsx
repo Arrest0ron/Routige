@@ -1,6 +1,5 @@
-import DiamondIcon from "./DiamondIcon"
-import StatBar from "./StatBar";
 
+import MenuIcon from "./MenuIcon";
 export default function Top() {
     return (
     <div className="
@@ -11,7 +10,7 @@ export default function Top() {
     h-15
     p-5
     bg-gray-800">
-      <p>Routige</p>
+      <MenuIcon/>
       <p>icon</p>
    
       
