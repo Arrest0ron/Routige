@@ -1,4 +1,3 @@
-
 import DiamondIcon from "./DiamondIcon";
 
 export default function TaskCard({ title = "Empty title", description = "Empty description", diamonds =0,  xp = 0 }) {
@@ -13,17 +12,21 @@ export default function TaskCard({ title = "Empty title", description = "Empty d
     justify-between
     text-white
     rounded-lg 
+    border-0
+    hover:border-blue-200
+    hover:border-1
     shadow-md 
-    hover:bg-purple-700
     h-fit
-    transition duration-200">
+    h-full">
         <div className="
+        h-full
         bg-gray-600 
         flex
         justify-center
         p-1 
         rounded-l-lg
-         min-w-10 h-full">
+         min-w-10 
+         ">
             <button className="
             flex
             justify-center

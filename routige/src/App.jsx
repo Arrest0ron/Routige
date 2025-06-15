@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Status from './components/Status'
 import TaskList from './components/TaskList'
+import SortableTaskList from './components/SortableTaskList'
 import Top from './components/Top'
 import './App.css'
 
@@ -40,20 +41,16 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <>
-      <main className="flex flex-col 
-      w-full h-full font-pixel
-       bg-gray-900">
-        <Top/>
-        <Status diamonds={10}/>
-        <div className="flex  p-5 gap-5 m-5 grow">
-          <TaskList tasks={daily_tasks} />
-          <TaskList tasks={tasks} />
-        </div>
-        
-      </main>
-    </>
-  )
+    <main className="flex flex-col w-full h-full font-pixel bg-gray-900">
+      <Top />
+      <Status diamonds={10} />
+
+      <div className="flex p-5 gap-5 m-5 grow">
+        <SortableTaskList tasks={daily_tasks} />
+        <SortableTaskList tasks={tasks} />
+      </div>
+    </main>
+  );
 }
 
 export default App
