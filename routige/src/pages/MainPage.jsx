@@ -18,7 +18,7 @@ export default function MainPage() {
       <Status xp={xp} gp={gp} hp={hp} level={level} diamonds={diamonds} />
 
       {/* Task Lists */}
-      <div className="flex p-5 gap-5 m-5 grow">
+      <div className="flex  p-5 gap-5 m-5 grow flex-wrap md:flex-nowrap">
         {/* Daily Tasks (Left) */}
         <SortableTaskList 
           tasks={dailyTasks} 
@@ -33,7 +33,7 @@ export default function MainPage() {
       </div>
 
       {/* Navigation */}
-      <nav className="bg-gray-800 p-4 text-center">
+      <nav className="bg-gray-800 text-center items-center  max-h-10">
         <Link to="/inventory" className="text-blue-400 hover:underline">
           🎒 Go to Inventory
         </Link>
