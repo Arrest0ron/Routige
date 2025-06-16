@@ -8,7 +8,9 @@ export default function TaskList({tasks}) {
     w-full
     space-y-4
     bg-gray-700
-    p-4
+    p-1
+    md:p-4
+
     rounded-lg">
         {tasks.map(task => (
         <TaskCard id={task.id} title={task.title} description={task.description} diamonds={task.diamonds} xp={task.xp} gp={task.gp} />

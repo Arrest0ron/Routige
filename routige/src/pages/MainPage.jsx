@@ -18,7 +18,7 @@ export default function MainPage() {
       <Status xp={xp} gp={gp} hp={hp} level={level} diamonds={diamonds} />
 
       {/* Task Lists */}
-      <div className="flex  p-5 gap-5 m-5 grow flex-wrap md:flex-nowrap">
+      <div className="flex  p-2 md:p-4 gap-2 md:gap-4  grow flex-wrap md:flex-nowrap">
         {/* Daily Tasks (Left) */}
         <SortableTaskList 
           tasks={dailyTasks} 

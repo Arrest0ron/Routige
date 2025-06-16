@@ -51,7 +51,7 @@ export default function SortableTaskList({ tasks = [] }) {
   return (
     <DndContext collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
       <SortableContext items={taskOrder.map(task => task.id)} strategy={verticalListSortingStrategy}>
-        <div className="flex flex-col w-full space-y-4 bg-gray-700 p-4 rounded-lg">
+        <div className="flex flex-col w-full space-y-4 bg-gray-700 p-2 md:p-4 rounded-lg">
           {taskOrder.map(task => (
             <SortableTask id={task.id} task={task} />
           ))}

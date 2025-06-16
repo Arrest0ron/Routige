@@ -22,7 +22,7 @@ export default function TaskCard({
   };
 
   return (
-    <div className="flex gap-5 flex-row bg-gray-800 w-full items-center justify-between text-white rounded-lg hover:border-blue-200 hover:border shadow-md h-fit h-full">
+    <div className="flex gap-2 md:gap-5 flex-row bg-gray-800 w-full items-center justify-between text-white rounded-lg hover:border-blue-200 hover:border shadow-md h-fit h-full">
       
       <div 
         
