@@ -11,7 +11,7 @@ export default function TaskList({tasks}) {
     p-4
     rounded-lg">
         {tasks.map(task => (
-        <TaskCard key={task.id} title={task.title} description={task.description} diamonds={task.diamonds} xp={task.xp} />
+        <TaskCard id={task.id} title={task.title} description={task.description} diamonds={task.diamonds} xp={task.xp} gp={task.gp} />
       ))}
     </div>
   );
